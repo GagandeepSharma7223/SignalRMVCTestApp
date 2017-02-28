@@ -1,0 +1,69 @@
+﻿@model TestApplication.Service.Models.TestAppModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>DevTest</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CampaignName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CampaignName, new { @required = "required" })
+                @Html.ValidationMessageFor(model => model.CampaignName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Clicks, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Clicks)
+                @Html.ValidationMessageFor(model => model.Clicks)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Conversions, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Conversions)
+                @Html.ValidationMessageFor(model => model.Conversions)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Impressions, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Impressions)
+                @Html.ValidationMessageFor(model => model.Impressions)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AffiliateName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AffiliateName, new { @required = "required" })
+                @Html.ValidationMessageFor(model => model.AffiliateName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

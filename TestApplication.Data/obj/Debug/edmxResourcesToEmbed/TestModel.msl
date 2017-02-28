@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestModelStoreContainer" CdmEntityContainer="TestEntities">
+    <EntitySetMapping Name="DevTests">
+      <EntityTypeMapping TypeName="TestModel.DevTest">
+        <MappingFragment StoreEntitySet="DevTest">
+          <ScalarProperty Name="AffiliateName" ColumnName="AffiliateName" />
+          <ScalarProperty Name="Impressions" ColumnName="Impressions" />
+          <ScalarProperty Name="Conversions" ColumnName="Conversions" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CampaignName" ColumnName="CampaignName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

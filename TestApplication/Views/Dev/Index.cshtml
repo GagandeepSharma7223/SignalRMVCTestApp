@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<script type="text/javascript">
+
+    $(function () {
+
+        // Proxy created on the fly
+        var job = $.connection.jobHub;
+
+        // Declare a function on the job hub so the server can invoke it
+        job.client.displayStatus = function () {
+            getData();
+        };
+
+        // Start the connection
+        $.connection.hub.start();
+        getData();
+    });
+
+    function getData() {
+        var $div = $('#tblInfo');
+        $.ajax({
+            url: '/Dev/GetData',
+            type: 'GET',
+            datatype: 'html',
+            success: function (data) {
+                $div.html(data);
+            }
+        });
+    }
+</script>
+
+
+<h2>Developers.</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div id="tblInfo">
+</div>

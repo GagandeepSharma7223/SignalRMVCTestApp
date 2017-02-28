@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Test.dbo.DevTest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DevTest">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CampaignName" Type="varchar" MaxLength="255" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Clicks" Type="int" />
+    <Property Name="Conversions" Type="int" />
+    <Property Name="Impressions" Type="int" />
+    <Property Name="AffiliateName" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="TestModelStoreContainer">
+    <EntitySet Name="DevTest" EntityType="Self.DevTest" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DevTest].[ID] AS [ID], 
+    [DevTest].[CampaignName] AS [CampaignName], 
+    [DevTest].[Date] AS [Date], 
+    [DevTest].[Clicks] AS [Clicks], 
+    [DevTest].[Conversions] AS [Conversions], 
+    [DevTest].[Impressions] AS [Impressions], 
+    [DevTest].[AffiliateName] AS [AffiliateName]
+    FROM [dbo].[DevTest] AS [DevTest]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
