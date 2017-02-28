@@ -12,6 +12,7 @@ namespace TestApplication.Data
     {
         private TestDBContext context = new TestDBContext();
         private GenericRepository<DevTest> devRepository;
+        private GenericRepository<Order> orderRepository;
         public GenericRepository<DevTest> Developers
         {
             get
@@ -22,6 +23,18 @@ namespace TestApplication.Data
                     this.devRepository = new GenericRepository<DevTest>(context);
                 }
                 return devRepository;
+            }
+        }
+        public GenericRepository<Order> Orders
+        {
+            get
+            {
+
+                if (this.orderRepository == null)
+                {
+                    this.orderRepository = new GenericRepository<Order>(context);
+                }
+                return orderRepository;
             }
         }
         public int Save()

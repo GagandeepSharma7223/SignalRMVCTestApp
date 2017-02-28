@@ -77,8 +77,11 @@
     <Compile Include="DevService.cs" />
     <Compile Include="Hubs\JobHub.cs" />
     <Compile Include="IDevService.cs" />
+    <Compile Include="IOrderService.cs" />
     <Compile Include="IRepostiory.cs" />
+    <Compile Include="Models\OrderModel.cs" />
     <Compile Include="Models\TestAppModel.cs" />
+    <Compile Include="OrderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

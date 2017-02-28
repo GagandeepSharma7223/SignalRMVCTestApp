@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Context\TestDBContext.cs" />
     <Compile Include="Entities\DevTest.cs" />
+    <Compile Include="Entities\Order.cs" />
     <Compile Include="GenericRepository.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Migrations\201702280347139_initial-setup.cs" />
@@ -59,6 +60,18 @@
     <Compile Include="Migrations\201702280356065_ChangeDataType.cs" />
     <Compile Include="Migrations\201702280356065_ChangeDataType.Designer.cs">
       <DependentUpon>201702280356065_ChangeDataType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702280654297_AddOrderEntity.cs" />
+    <Compile Include="Migrations\201702280654297_AddOrderEntity.Designer.cs">
+      <DependentUpon>201702280654297_AddOrderEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702280707149_UpdateColumnType.cs" />
+    <Compile Include="Migrations\201702280707149_UpdateColumnType.Designer.cs">
+      <DependentUpon>201702280707149_UpdateColumnType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702281430422_UpdatePhoneType.cs" />
+    <Compile Include="Migrations\201702281430422_UpdatePhoneType.Designer.cs">
+      <DependentUpon>201702281430422_UpdatePhoneType.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +90,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702280356065_ChangeDataType.resx">
       <DependentUpon>201702280356065_ChangeDataType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702280654297_AddOrderEntity.resx">
+      <DependentUpon>201702280654297_AddOrderEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702280707149_UpdateColumnType.resx">
+      <DependentUpon>201702280707149_UpdateColumnType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702281430422_UpdatePhoneType.resx">
+      <DependentUpon>201702281430422_UpdatePhoneType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

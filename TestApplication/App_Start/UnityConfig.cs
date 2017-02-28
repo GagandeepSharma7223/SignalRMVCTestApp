@@ -41,6 +41,7 @@ namespace TestApplication.App_Start
             // container.RegisterType<IProductRepository, ProductRepository>();
             //container.RegisterInstance(AutoMapperConfig.Mapper);
             container.RegisterType<IDevService, DevService>();
+            container.RegisterType<IOrderService, OrderService>();
             container.RegisterType<IUnitOfWork, UnitOfWork>(new TransientLifetimeManager());
         }
     }

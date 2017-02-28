@@ -10,6 +10,7 @@ namespace TestApplication.Data
     public interface IUnitOfWork
     {
         GenericRepository<DevTest> Developers { get; }
+        GenericRepository<Order> Orders { get; }
         int Save();
     }
 }

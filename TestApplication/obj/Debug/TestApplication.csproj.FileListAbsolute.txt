@@ -152,3 +152,12 @@ D:\Projects\SignalRMVCTestApp\TestApplication\bin\Microsoft.Owin.Security.Micros
 D:\Projects\SignalRMVCTestApp\TestApplication\obj\Debug\TestApplication.csprojResolveAssemblyReference.cache
 D:\Projects\SignalRMVCTestApp\TestApplication\obj\Debug\TestApplication.dll
 D:\Projects\SignalRMVCTestApp\TestApplication\obj\Debug\TestApplication.pdb
+D:\Projects\SignalRMVCTestApp\TestApplication\bin\Microsoft.Practices.Unity.WebApi.dll
+D:\Projects\SignalRMVCTestApp\TestApplication\bin\System.Net.Http.Formatting.dll
+D:\Projects\SignalRMVCTestApp\TestApplication\bin\System.Web.Http.dll
+D:\Projects\SignalRMVCTestApp\TestApplication\bin\System.Web.Http.WebHost.dll
+D:\Projects\SignalRMVCTestApp\TestApplication\bin\Unity.WebApi.dll
+D:\Projects\SignalRMVCTestApp\TestApplication\bin\Microsoft.Practices.Unity.WebApi.xml
+D:\Projects\SignalRMVCTestApp\TestApplication\bin\System.Net.Http.Formatting.xml
+D:\Projects\SignalRMVCTestApp\TestApplication\bin\System.Web.Http.xml
+D:\Projects\SignalRMVCTestApp\TestApplication\bin\System.Web.Http.WebHost.xml

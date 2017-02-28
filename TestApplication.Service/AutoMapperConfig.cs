@@ -25,6 +25,7 @@ namespace TestApplication.Service
         protected override void Configure()
         {
             Mapper.CreateMap<TestAppModel, DevTest>().ReverseMap();
+            Mapper.CreateMap<OrderModel, Order>().ReverseMap();
         }
     }
 }

@@ -15,5 +15,6 @@ namespace TestApplication.Data.Context
         {
         }
         public virtual DbSet<DevTest> DevTests { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
     }
 }

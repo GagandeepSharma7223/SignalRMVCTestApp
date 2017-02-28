@@ -18,9 +18,11 @@ D:\Projects\SignalRMVCTestApp\TestApplication.Data\bin\Debug\EntityFramework.dll
 D:\Projects\SignalRMVCTestApp\TestApplication.Data\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projects\SignalRMVCTestApp\TestApplication.Data\bin\Debug\EntityFramework.xml
 D:\Projects\SignalRMVCTestApp\TestApplication.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\Projects\SignalRMVCTestApp\TestApplication.Data\obj\Debug\TestApplication.Data.csprojResolveAssemblyReference.cache
 D:\Projects\SignalRMVCTestApp\TestApplication.Data\obj\Debug\TestApplication.Data.Migrations.initialsetup.resources
 D:\Projects\SignalRMVCTestApp\TestApplication.Data\obj\Debug\TestApplication.Data.Migrations.ChangeDataType.resources
 D:\Projects\SignalRMVCTestApp\TestApplication.Data\obj\Debug\TestApplication.Data.csproj.GenerateResource.Cache
 D:\Projects\SignalRMVCTestApp\TestApplication.Data\obj\Debug\TestApplication.Data.dll
 D:\Projects\SignalRMVCTestApp\TestApplication.Data\obj\Debug\TestApplication.Data.pdb
+D:\Projects\SignalRMVCTestApp\TestApplication.Data\obj\Debug\TestApplication.Data.Migrations.AddOrderEntity.resources
+D:\Projects\SignalRMVCTestApp\TestApplication.Data\obj\Debug\TestApplication.Data.Migrations.UpdateColumnType.resources
+D:\Projects\SignalRMVCTestApp\TestApplication.Data\obj\Debug\TestApplication.Data.Migrations.UpdatePhoneType.resources
